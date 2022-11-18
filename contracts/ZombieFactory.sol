@@ -24,7 +24,7 @@ contract ZombieFactory {
    * @param _name The name of the zombie to be created
    * @param _dna The DNA of the zombie to be created
    */
-  function _createZombie(string memory _name, uint256 _dna) private {
+  function _createZombie(string memory _name, uint256 _dna) internal {
     zombies.push(Zombie(_name, _dna));
     console.log(zombies.length); // Remove that line later
 
